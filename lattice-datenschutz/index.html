@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Project Lattice</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #55555a;
+    --accent: #0a5cd8;
+    --card-bg: #f5f6f8;
+    --border: #dcdfe4;
+    --code-bg: #eef0f3;
+    --placeholder-bg: #fff4d6;
+    --placeholder-border: #e0b23b;
+    --note-bg: #eef6ff;
+    --note-border: #a9c9f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #eef0f2;
+      --muted: #b0b2b8;
+      --accent: #6fa8ff;
+      --card-bg: #1c1c1f;
+      --border: #333438;
+      --code-bg: #242427;
+      --placeholder-bg: #3a3216;
+      --placeholder-border: #8a6d1c;
+      --note-bg: #142236;
+      --note-border: #2c4c76;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0 16px 64px;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 18px;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    padding-top: 0.4em;
+    border-top: 1px solid var(--border);
+  }
+
+  h2:first-of-type { border-top: none; padding-top: 0; }
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+  }
+
+  p { margin: 0.7em 0; }
+
+  ul, ol { padding-left: 1.3em; margin: 0.7em 0; }
+  li { margin: 0.35em 0; }
+
+  a { color: var(--accent); }
+
+  strong { font-weight: 600; }
+
+  .placeholder {
+    display: inline;
+    background: var(--placeholder-bg);
+    border: 1px solid var(--placeholder-border);
+    border-radius: 4px;
+    padding: 0.05em 0.4em;
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .to-check {
+    background: var(--note-bg);
+    border: 1px solid var(--note-border);
+    border-radius: 8px;
+    padding: 0.85em 1em;
+    margin: 1em 0;
+    font-size: 0.94rem;
+  }
+
+  .to-check strong { display: inline; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.93rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--card-bg);
+    font-weight: 600;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+  }
+
+  .steps {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    font-weight: 600;
+  }
+
+  code {
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+    font-size: 0.9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .toc {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1em 1.2em;
+    margin-bottom: 1.6em;
+    font-size: 0.92rem;
+  }
+  .toc summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .toc ol {
+    margin-top: 0.8em;
+  }
+  .toc a { text-decoration: none; }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.4rem; }
+    h2 { font-size: 1.05rem; }
+    table, th, td { font-size: 0.85rem; }
+    th, td { padding: 6px 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Datenschutzerklärung — Project Lattice</h1>
+  <p class="subtitle">Stand: 29. September 2026</p>
+</header>
+
+<details class="toc">
+  <summary>Inhalt</summary>
+  <ol>
+    <li><a href="#verantwortlicher">Verantwortlicher</a></li>
+    <li><a href="#daten">Welche Daten werden verarbeitet</a></li>
+    <li><a href="#zwecke">Zwecke und Rechtsgrundlagen</a></li>
+    <li><a href="#empfaenger">Empfänger und Auftragsverarbeiter</a></li>
+    <li><a href="#dauer">Speicherdauer</a></li>
+    <li><a href="#loeschen-app">Konto löschen in der App</a></li>
+    <li><a href="#nach-loeschung">Was nach einer Löschung bestehen bleibt</a></li>
+    <li><a href="#support">Löschung per Support</a></li>
+    <li><a href="#rechte">Rechte der betroffenen Person</a></li>
+    <li><a href="#kein-tracking">Kein Tracking, keine Werbung</a></li>
+    <li><a href="#beschwerde">Beschwerderecht</a></li>
+    <li><a href="#kinder">Kinder und Jugendliche</a></li>
+    <li><a href="#premium">Käufe in der App (Premium) — noch nicht aktiv</a></li>
+    <li><a href="#aenderungen">Änderungen dieser Erklärung</a></li>
+  </ol>
+</details>
+
+<p>Diese Erklärung informiert darüber, welche personenbezogenen Daten bei der
+Nutzung der App „Project Lattice“ (iPhone, iPad, Mac) verarbeitet werden, zu
+welchem Zweck das geschieht und welche Rechte dabei bestehen.</p>
+
+<h2 id="verantwortlicher">1. Verantwortlicher</h2>
+<p>Verantwortlich für die Datenverarbeitung im Sinne der
+Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<div class="card">
+  <p style="margin:0">RocDev Solution, Inhaber Phillipp Rochel<br>
+  Industriestraße 13, 29559 Wieren, Deutschland<br>
+  E-Mail: <a href="mailto:phillipprochel@icloud.com">phillipprochel@icloud.com</a></p>
+</div>
+<p>Für alle Fragen zum Datenschutz, für Auskünfte sowie für die Löschung eines
+Kontos per Support-Weg (Abschnitt 8) ist diese E-Mail-Adresse die
+Kontaktstelle.</p>
+
+<h2 id="daten">2. Welche Daten werden verarbeitet</h2>
+
+<h3>2.1 Kontodaten</h3>
+<p>Bei der Registrierung werden erhoben:</p>
+<ul>
+  <li><strong>E-Mail-Adresse</strong> (dient der eindeutigen Identifikation
+    des Kontos; wird nicht verifiziert und nicht für Werbung genutzt),</li>
+  <li><strong>Rufname</strong> (der Name, unter dem man in der Spielwelt
+    sichtbar ist),</li>
+  <li><strong>Passwort</strong> — es wird <strong>niemals im Klartext
+    gespeichert</strong>, sondern nur als kryptografischer Hash
+    (Salt + Hash) abgelegt. Aus dem gespeicherten Wert lässt sich das
+    ursprüngliche Passwort nicht wiederherstellen.</li>
+</ul>
+
+<h3>2.2 Spieldaten</h3>
+<p>Während des Spielens entstehen Daten zum Spielverlauf: Bestände,
+Aufträge, Anlagen, Droiden, Markttransaktionen, Kampf- und
+Aufklärungsberichte sowie vergleichbare Vorgänge innerhalb der Spielwelt.
+Diese Daten sind zur Vertragserfüllung notwendig und mit dem Konto
+verknüpft, solange das Konto besteht.</p>
+
+<h3>2.3 Technische Daten</h3>
+<ul>
+  <li><strong>IP-Adresse in Server-Protokollen (Logs):</strong> Jede Anfrage
+    an den Server wird mit der anfragenden IP-Adresse protokolliert. Das
+    dient der Fehlersuche, der Missbrauchsabwehr und — im Fall einer
+    Kontolöschung — dem Nachweis, dass eine Löschung tatsächlich
+    stattgefunden hat (die Log-Zeile „Konto gelöscht“ ist über eine
+    technische Anfragekennung mit der Log-Zeile der eingehenden Anfrage
+    verknüpft, die die IP-Adresse enthält).</li>
+  <li><strong>IP-Adresse in der Anfragebremse (Arbeitsspeicher):</strong> Um
+    Missbrauch (z. B. massenhafte Anmeldeversuche) zu verhindern, zählt der
+    Server kurzzeitig, wie viele Anfragen von einer IP-Adresse eingehen.
+    Diese Zähler liegen ausschließlich im <strong>Arbeitsspeicher</strong>
+    des Serverprozesses, werden nicht auf Festplatte geschrieben und sind
+    spätestens mit einem Neustart des Servers wieder gelöscht.</li>
+  <li><strong>Anmeldesperre:</strong> Bei wiederholt falschen
+    Anmeldeversuchen wird zur betroffenen E-Mail-Adresse nicht die Adresse
+    selbst, sondern ein kryptografischer Hash-Wert (SHA-256) der
+    E-Mail-Adresse gespeichert, um eine vorübergehende Sperre umzusetzen.</li>
+</ul>
+
+<h3>2.4 Lokale Speicherung auf dem Gerät</h3>
+<p>Folgende Daten verbleiben ausschließlich auf dem eigenen Gerät und werden
+nicht an den Betreiber übermittelt:</p>
+<ul>
+  <li>die Anmelde-Sitzung, verschlüsselt in der <strong>Keychain</strong>
+    des Geräts,</li>
+  <li>die eingestellte <strong>Serveradresse</strong>, die lokale
+    <strong>Förder-Warteschlange</strong> und Übersichtsmerker in den
+    <strong>UserDefaults</strong> (Geräteeinstellungen) der App.</li>
+</ul>
+<p>Diese Angaben dienen ausschließlich der Funktion der App auf dem
+jeweiligen Gerät.</p>
+
+<h2 id="zwecke">3. Zwecke und Rechtsgrundlagen der Verarbeitung</h2>
+<table>
+  <tr><th>Zweck</th><th>Rechtsgrundlage</th></tr>
+  <tr>
+    <td>Bereitstellung eines Spielkontos, Durchführung des Spiels,
+      Speicherung des Spielstands</td>
+    <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
+  </tr>
+  <tr>
+    <td>Sicherheit, Missbrauchs- und Betrugsabwehr (Anfragebremse,
+      Anmeldesperre), Fehlersuche im Betrieb, Nachweis einer
+      Kontolöschung</td>
+    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem
+      sicheren und funktionsfähigen Betrieb)</td>
+  </tr>
+  <tr>
+    <td>Tägliche Datensicherung zum Schutz vor Datenverlust</td>
+    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</td>
+  </tr>
+</table>
+<p>Es findet <strong>keine</strong> Verarbeitung zu Werbezwecken, kein
+Tracking und kein Profiling statt (siehe Abschnitt 10).</p>
+
+<h2 id="empfaenger">4. Empfänger und Auftragsverarbeiter</h2>
+
+<h3>4.1 Hosting: Railway Corp.</h3>
+<p>Die Server der App (Datenbank, Anwendung, tägliche Sicherung) laufen bei
+<strong>Railway Corp.</strong>, Region Amsterdam/EU. Railway hat als
+Auftragsverarbeiter Zugriff auf die verarbeiteten Daten, soweit das für den
+Betrieb der Server technisch notwendig ist.</p>
+<div class="to-check">
+  <strong>Vom Betreiber zu prüfen:</strong> Ob mit Railway ein
+  Auftragsverarbeitungsvertrag (AVV) nach Art. 28 DSGVO abgeschlossen ist
+  bzw. abgeschlossen werden muss, und — falls Datenverarbeitung außerhalb der
+  EU/des EWR stattfindet (z. B. durch Sub-Auftragsverarbeiter von Railway) —
+  ob Standardvertragsklauseln (SCC) vorliegen. Diese Prüfung ist vor
+  Veröffentlichung dieser Erklärung abzuschließen.
+</div>
+
+<h3>4.2 Apple</h3>
+<p>Apple (Apple Inc. bzw. Apple Distribution International) ist
+ausschließlich für den <strong>Vertrieb der App</strong> über den App Store
+sowie für <strong>TestFlight</strong> zuständig. Käufe, Rechnungsstellung und
+ggf. Altersfreigaben laufen über Apples eigene Systeme und unterliegen
+Apples eigener Datenschutzerklärung. Der Betreiber erhält von Apple keine
+Zahlungsdaten.</p>
+<p>Weitere Empfänger oder Auftragsverarbeiter gibt es nicht.</p>
+
+<h2 id="dauer">5. Speicherdauer</h2>
+<table>
+  <tr><th>Daten</th><th>Dauer</th></tr>
+  <tr>
+    <td>Kontodaten (E-Mail, Passwort-Hash, Rufname)</td>
+    <td>bis zur Löschung des Kontos durch die spielende Person selbst oder
+      auf Anfrage über den Support (Abschnitt 8)</td>
+  </tr>
+  <tr>
+    <td>Spieldaten nach einer Kontolöschung</td>
+    <td>bleiben in anonymisierter/pseudonymisierter Form bestehen
+      (siehe Abschnitt 7)</td>
+  </tr>
+  <tr>
+    <td>Tägliche Datensicherung (Backup)</td>
+    <td>maximal 14 Tage, danach automatische Löschung</td>
+  </tr>
+  <tr>
+    <td>Server-Protokolle (Logs) beim Hoster</td>
+    <td>7 Tage beim Hoster Railway (Tarif „Hobby“), danach automatische Löschung</td>
+  </tr>
+  <tr>
+    <td>Zähler der Anfragebremse</td>
+    <td>nur im Arbeitsspeicher, längstens bis zum nächsten Neustart des
+      Servers</td>
+  </tr>
+</table>
+
+<h2 id="loeschen-app">6. Konto löschen in der App</h2>
+<p>Das Konto kann jederzeit selbst und ohne Wartezeit <strong>in der
+App</strong> gelöscht werden:</p>
+<p class="steps">Kontoblatt → „Konto löschen“ → Hinweise lesen → Passwort
+eingeben → endgültig bestätigen.</p>
+<p>Nach der Löschung gilt:</p>
+<ul>
+  <li>Die E-Mail-Adresse und der Rufname werden sofort überschrieben; eine
+    Anmeldung mit den alten Zugangsdaten ist danach nicht mehr möglich.</li>
+  <li>Alle Sitzungen auf allen Geräten werden beendet.</li>
+  <li>Offene Marktaufträge werden storniert, Ware und Guthaben verbleiben
+    eingefroren im (nun anonymen) Bestand.</li>
+  <li>Andere Spielerinnen und Spieler sehen an Stelle des bisherigen
+    Rufnamens „<strong>Gelöschter Spieler #XXXX</strong>“.</li>
+  <li>Spieldaten, die mit anderen Spielenden verknüpft sind (z. B. Markt-
+    oder Kampfhistorie), bleiben aus technischen Gründen bestehen, sind aber
+    nach der Löschung keiner Person mehr zuordenbar.</li>
+  <li>Die Löschung ist <strong>endgültig</strong> und kann nicht rückgängig
+    gemacht werden.</li>
+</ul>
+<p>Die Löschung wird in einem Löschprotokoll ohne personenbezogene Daten
+festgehalten (Konto-Kennung, Zeitpunkt, Weg), um die Erledigung nachweisen zu
+können und um eine Löschung nach einer technischen Wiederherstellung aus
+einer Datensicherung erneut anwenden zu können (Abschnitt 5).</p>
+
+<h2 id="nach-loeschung">7. Was nach einer Löschung bestehen bleibt</h2>
+<p>Aus technischen Gründen (Wirtschaftssystem der Spielwelt,
+Nullsummenprinzip, Nachvollziehbarkeit für andere Spielende) werden
+Spieldaten nicht vollständig gelöscht, sondern <strong>vom Personenbezug
+getrennt (anonymisiert/pseudonymisiert)</strong>: Die Datensätze bleiben an
+eine technische Kennung gebunden, die nach der Löschung von E-Mail-Adresse,
+Passwort und Rufname niemandem mehr zugeordnet werden kann. Bereits
+abgeschlossene, versiegelte Aufklärungsberichte anderer Spielender können den
+früheren Rufnamen technisch weiterhin enthalten; angezeigt wird dort jedoch
+ebenfalls „Gelöschter Spieler #XXXX“. Eine zusätzliche, endgültige Entfernung
+dieses Rests ist auf Anfrage über den Support möglich (Abschnitt 8).</p>
+
+<h2 id="support">8. Löschung per Support (ohne Zugang zur App)</h2>
+<p>Wer sich nicht mehr anmelden kann (z. B. Passwort vergessen — ein
+automatischer Passwort-Reset ist derzeit nicht vorgesehen), kann die
+Löschung des Kontos per E-Mail an die in Abschnitt 1 genannte Adresse
+verlangen. Aus Sicherheitsgründen wird vor der Löschung geprüft, dass die
+Anfrage tatsächlich von der Inhaberin bzw. dem Inhaber der betroffenen
+E-Mail-Adresse stammt (Antwort ausschließlich an diese Adresse).</p>
+
+<h2 id="rechte">9. Rechte der betroffenen Person</h2>
+<p>Es besteht das Recht auf:</p>
+<ul>
+  <li><strong>Auskunft</strong> über die verarbeiteten Daten
+    (Art. 15 DSGVO),</li>
+  <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO),</li>
+  <li><strong>Löschung</strong> („Recht auf Vergessenwerden“,
+    Art. 17 DSGVO) — in der App selbst umsetzbar, siehe Abschnitt 6,</li>
+  <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO),</li>
+  <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO),</li>
+  <li><strong>Widerspruch</strong> gegen eine auf berechtigtem Interesse
+    beruhende Verarbeitung (Art. 21 DSGVO).</li>
+</ul>
+<p>Zur Ausübung dieser Rechte genügt eine formlose E-Mail an die in
+Abschnitt 1 genannte Adresse.</p>
+
+<h2 id="kein-tracking">10. Kein Tracking, keine Werbung, keine Drittanbieter-SDKs</h2>
+<p>Project Lattice verfolgt seine Nutzerinnen und Nutzer <strong>nicht</strong>
+geräte- oder websiteübergreifend, zeigt <strong>keine Werbung</strong> und
+bindet <strong>keine Analyse-, Tracking- oder Werbe-SDKs von
+Drittanbietern</strong> ein. Die einzigen an den Server übermittelten
+personenbezogenen Daten sind E-Mail-Adresse und Rufname zum Zweck der
+Kontoführung (siehe auch das Datenschutzmanifest der App,
+<code>PrivacyInfo.xcprivacy</code>).</p>
+
+<h2 id="beschwerde">11. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+<p>Unabhängig von anderen Rechtsbehelfen besteht das Recht, sich bei einer
+Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem
+Mitgliedstaat des gewöhnlichen Aufenthalts, des Arbeitsplatzes oder des Orts
+des mutmaßlichen Verstoßes. Zuständig für den Verantwortlichen ist
+voraussichtlich:</p>
+<div class="card">
+  <p style="margin:0">Die Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover</p>
+</div>
+
+<h2 id="kinder">12. Kinder und Jugendliche</h2>
+<p>Project Lattice richtet sich nicht an Kinder unter
+16 Jahren. Personen
+unter diesem Alter sollen die App nur mit Zustimmung der
+Erziehungsberechtigten nutzen. Sollten Hinweise vorliegen, dass ein Konto
+von einer zu jungen Person ohne die erforderliche Zustimmung angelegt wurde,
+wird der Betreiber es auf Mitteilung hin löschen.</p>
+
+<h2 id="premium">13. Käufe innerhalb der App (Premium) — noch nicht aktiv</h2>
+<div class="to-check">
+  <strong>Dieser Abschnitt ist vorbereitet, aber derzeit noch nicht
+  anwendbar</strong>, weil die App aktuell keine kostenpflichtigen Inhalte
+  anbietet.
+</div>
+<p>Sobald In-App-Käufe („Premium“) eingeführt werden, gilt ergänzend:</p>
+<ul>
+  <li>Käufe erfolgen ausschließlich über <strong>Apples
+    In-App-Kauf-System</strong>. Der Betreiber erhält dabei keine Zahlungs-
+    oder Kartendaten, sondern nur eine Kaufbestätigung (Transaktion) von
+    Apple.</li>
+  <li>Kaufbelege werden — auch nach einer Kontolöschung — aus handels- und
+    steuerrechtlichen Gründen sowie wegen möglicher späterer
+    Rückerstattungsmeldungen aufbewahrt (Art. 17 Abs. 3 lit. b bzw. e
+    DSGVO). Sie werden dabei einem anonymisierten Konto zugeordnet, nicht
+    mehr der Person.</li>
+  <li>Rechtsgrundlage bleibt Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung
+    des Kaufvorgangs).</li>
+</ul>
+<div class="to-check">
+  <strong>Vor der Einführung von Premium zu ergänzen:</strong> genaue
+  Beschreibung der Kaufdaten, Aufbewahrungsfristen der Kaufbelege, Hinweis
+  auf Apples eigene Datenschutzerklärung, ggf. Aktualisierung des
+  Datenschutzmanifests (<code>PrivacyInfo.xcprivacy</code>) um
+  „Kaufhistorie“.
+</div>
+
+<h2 id="aenderungen">14. Änderungen dieser Erklärung</h2>
+<p>Diese Datenschutzerklärung kann angepasst werden, etwa wenn sich die App
+oder die zugrunde liegende Datenverarbeitung ändert. Die jeweils aktuelle
+Fassung ist unter der in App Store Connect und in der App hinterlegten
+Adresse abrufbar.</p>
+
+<footer>
+  <p>Stand dieser Erklärung: 29. September 2026</p>
+  
+</footer>
+
+</div>
+</body>
+</html>
