@@ -198,304 +198,99 @@
 
 <header>
   <h1>Datenschutzerklärung — Project Lattice</h1>
-  <p class="subtitle">Stand: 29. September 2026</p>
+  <p class="subtitle">Stand: 7. Oktober 2026</p>
 </header>
+<p>Diese Erklärung beschreibt die Verarbeitung personenbezogener Daten bei der Nutzung von Project Lattice auf iPhone, iPad und Mac sowie beim Aufruf dieser Informationsseite.</p>
 
-<details class="toc">
-  <summary>Inhalt</summary>
-  <ol>
-    <li><a href="#verantwortlicher">Verantwortlicher</a></li>
-    <li><a href="#daten">Welche Daten werden verarbeitet</a></li>
-    <li><a href="#zwecke">Zwecke und Rechtsgrundlagen</a></li>
-    <li><a href="#empfaenger">Empfänger und Auftragsverarbeiter</a></li>
-    <li><a href="#dauer">Speicherdauer</a></li>
-    <li><a href="#loeschen-app">Konto löschen in der App</a></li>
-    <li><a href="#nach-loeschung">Was nach einer Löschung bestehen bleibt</a></li>
-    <li><a href="#support">Löschung per Support</a></li>
-    <li><a href="#rechte">Rechte der betroffenen Person</a></li>
-    <li><a href="#kein-tracking">Kein Tracking, keine Werbung</a></li>
-    <li><a href="#beschwerde">Beschwerderecht</a></li>
-    <li><a href="#kinder">Kinder und Jugendliche</a></li>
-    <li><a href="#premium">Käufe in der App (Premium) — noch nicht aktiv</a></li>
-    <li><a href="#aenderungen">Änderungen dieser Erklärung</a></li>
-  </ol>
-</details>
+<h2 id="verantwortlicher">1. Verantwortlicher und Kontakt</h2>
+<div class="card"><p>RocDev Solution<br>Inhaber Phillipp Rochel<br>Industriestraße 13<br>29559 Wieren, Deutschland<br><a href="mailto:phillipprochel@icloud.com">phillipprochel@icloud.com</a></p></div>
+<p>Diese Adresse ist die Kontaktstelle für Datenschutz, Auskünfte, Löschanfragen und Beschwerden über nutzererzeugte Inhalte.</p>
 
-<p>Diese Erklärung informiert darüber, welche personenbezogenen Daten bei der
-Nutzung der App „Project Lattice“ (iPhone, iPad, Mac) verarbeitet werden, zu
-welchem Zweck das geschieht und welche Rechte dabei bestehen.</p>
-
-<h2 id="verantwortlicher">1. Verantwortlicher</h2>
-<p>Verantwortlich für die Datenverarbeitung im Sinne der
-Datenschutz-Grundverordnung (DSGVO) ist:</p>
-<div class="card">
-  <p style="margin:0">RocDev Solution, Inhaber Phillipp Rochel<br>
-  Industriestraße 13, 29559 Wieren, Deutschland<br>
-  E-Mail: <a href="mailto:phillipprochel@icloud.com">phillipprochel@icloud.com</a></p>
-</div>
-<p>Für alle Fragen zum Datenschutz, für Auskünfte sowie für die Löschung eines
-Kontos per Support-Weg (Abschnitt 8) ist diese E-Mail-Adresse die
-Kontaktstelle.</p>
-
-<h2 id="daten">2. Welche Daten werden verarbeitet</h2>
-
+<h2 id="daten">2. Welche Daten verarbeitet werden</h2>
 <h3>2.1 Kontodaten</h3>
-<p>Bei der Registrierung werden erhoben:</p>
-<ul>
-  <li><strong>E-Mail-Adresse</strong> (dient der eindeutigen Identifikation
-    des Kontos; wird nicht verifiziert und nicht für Werbung genutzt),</li>
-  <li><strong>Rufname</strong> (der Name, unter dem man in der Spielwelt
-    sichtbar ist),</li>
-  <li><strong>Passwort</strong> — es wird <strong>niemals im Klartext
-    gespeichert</strong>, sondern nur als kryptografischer Hash
-    (Salt + Hash) abgelegt. Aus dem gespeicherten Wert lässt sich das
-    ursprüngliche Passwort nicht wiederherstellen.</li>
-</ul>
-
+<p>Bei Registrierung und Anmeldung verarbeitet der Server E-Mail-Adresse, Rufname und Passwort. Die E-Mail-Adresse dient der Kontozuordnung, wird derzeit nicht verifiziert und nicht für Werbung verwendet. Das Passwort wird nicht im Klartext gespeichert, sondern als kryptografischer Hash mit Salt. Technische Konto- und Spielerkennungen ordnen die Vorgänge dem Konto zu.</p>
 <h3>2.2 Spieldaten</h3>
-<p>Während des Spielens entstehen Daten zum Spielverlauf: Bestände,
-Aufträge, Anlagen, Droiden, Markttransaktionen, Kampf- und
-Aufklärungsberichte sowie vergleichbare Vorgänge innerhalb der Spielwelt.
-Diese Daten sind zur Vertragserfüllung notwendig und mit dem Konto
-verknüpft, solange das Konto besteht.</p>
-
+<p>Zum Spielstand gehören Bestände, Guthaben, Anlagen, Droiden, Produktion, Markttransaktionen, Transporte, Fertigkeiten, Missionen sowie Kampf- und Aufklärungsberichte. Diese Daten sind mit dem Konto verknüpft. Für die gemeinsame Spielwelt notwendige Angaben, etwa Rufnamen, Marktangebote oder Karteninformationen, werden anderen Spielenden entsprechend ihrer Spielberechtigung angezeigt.</p>
 <h3>2.3 Technische Daten</h3>
+<p>Server-Protokolle können IP-Adresse, Anfragekennung, Zeitpunkt und technischen Vorgang enthalten. Sie dienen Fehlersuche, Missbrauchsabwehr und dem Nachweis einer Kontolöschung. Kurzzeitige Anfragezähler pro IP-Adresse liegen im Arbeitsspeicher des Servers und werden spätestens bei einem Neustart entfernt. Zur vorübergehenden Anmeldesperre nach Fehlversuchen wird ein SHA-256-Hash der betroffenen E-Mail-Adresse gespeichert.</p>
+<h3>2.4 Speicherung auf dem Gerät</h3>
+<p>Die App speichert die Sitzung geschützt in der Keychain sowie Serveradresse, Förder-Warteschlange und Übersichtsmerker in UserDefaults. Diese lokalen Ablagen dienen der App-Funktion. Die Sitzung wird bei authentifizierten Serveranfragen verwendet; daraus folgt keine zusätzliche Übermittlung der gesamten lokalen Ablage.</p>
+<h3 id="allianzen-meldungen">2.5 Allianzen und Meldungen</h3>
 <ul>
-  <li><strong>IP-Adresse in Server-Protokollen (Logs):</strong> Jede Anfrage
-    an den Server wird mit der anfragenden IP-Adresse protokolliert. Das
-    dient der Fehlersuche, der Missbrauchsabwehr und — im Fall einer
-    Kontolöschung — dem Nachweis, dass eine Löschung tatsächlich
-    stattgefunden hat (die Log-Zeile „Konto gelöscht“ ist über eine
-    technische Anfragekennung mit der Log-Zeile der eingehenden Anfrage
-    verknüpft, die die IP-Adresse enthält).</li>
-  <li><strong>IP-Adresse in der Anfragebremse (Arbeitsspeicher):</strong> Um
-    Missbrauch (z. B. massenhafte Anmeldeversuche) zu verhindern, zählt der
-    Server kurzzeitig, wie viele Anfragen von einer IP-Adresse eingehen.
-    Diese Zähler liegen ausschließlich im <strong>Arbeitsspeicher</strong>
-    des Serverprozesses, werden nicht auf Festplatte geschrieben und sind
-    spätestens mit einem Neustart des Servers wieder gelöscht.</li>
-  <li><strong>Anmeldesperre:</strong> Bei wiederholt falschen
-    Anmeldeversuchen wird zur betroffenen E-Mail-Adresse nicht die Adresse
-    selbst, sondern ein kryptografischer Hash-Wert (SHA-256) der
-    E-Mail-Adresse gespeichert, um eine vorübergehende Sperre umzusetzen.</li>
+  <li><strong>Allianzname und Kürzel:</strong> frei gewählte, automatisch auf zulässige Zeichen, Länge und gesperrte Begriffe geprüfte Inhalte. Sie sind für angemeldete Spielende in Suche und Allianzblatt sichtbar; das Kürzel erscheint außerdem bei Mitgliedern auf der Sektorkarte. Gesperrte Allianzen erscheinen Nichtmitgliedern als „Gesperrte Allianz“ ohne Kürzel. Bitte keine echten Namen, E-Mail-Adressen oder Anschriften eintragen.</li>
+  <li><strong>Mitgliedschaft:</strong> Spielerkennung, Allianz, Rolle, Beitritts- und Endzeit sowie Grund des Endes. Mitglieder derselben Allianz sehen die Mitgliederliste mit Rufnamen, Rollen und Beitrittsdatum. Nichtmitglieder sehen keine Mitgliederliste, können aber Mitgliederzahl sowie Kennung und Rufname der Leitung einsehen.</li>
+  <li><strong>Einladungen und Bewerbungen:</strong> Beteiligte, Zeitpunkte, Ablauf und Ergebnis. Die beteiligte Person sowie Leitung und Personal der betroffenen Allianz können die für sie vorgesehenen Vorgänge einsehen.</li>
+  <li><strong>Allianzverlauf:</strong> Gründung, Beitritte, Austritte, Entlassungen und Änderungen von Rollen, Namen oder Leitung. Sichtbar für Leitung und Personal.</li>
+  <li><strong>Meldungen von Allianzbezeichnungen oder Rufnamen:</strong> technische Kennung der meldenden Person und des Ziels, Weltkennung, gewählte Kategorie, historischer Schnappschuss des gemeldeten Namens und gegebenenfalls Allianzkürzels sowie Zeitpunkte und Bearbeitungsstatus. Es gibt keinen Freitext. Andere Spielende erhalten keinen Zugriff auf Melderidentität oder Moderationsverlauf; das Ergebnis wird der meldenden Person nicht über den Meldeweg mitgeteilt.</li>
+  <li><strong>Moderation:</strong> Der Betreiber kann Allianzen sperren oder zwangsweise umbenennen und gemeldete Rufnamen zwangsweise ändern. Maßnahmen werden mit Zeitpunkt, Ziel, Pflichtbegründung und gegebenenfalls altem und neuem Namen im geschützten Betreiberprotokoll gespeichert. Meldungserledigung und Zwangsumbenennung sind getrennte Vorgänge. Eine menschliche Vorabprüfung sämtlicher Namen erfolgt nicht.</li>
 </ul>
+<p>Zur Verhinderung von Überfällen und Konvoiabfängen zwischen Mitgliedern derselben Allianz prüft der Server die Mitgliedschaften der Beteiligten. Die Allianzfunktion führt kein Tracking und kein neues Drittanbieter-SDK ein.</p>
 
-<h3>2.4 Lokale Speicherung auf dem Gerät</h3>
-<p>Folgende Daten verbleiben ausschließlich auf dem eigenen Gerät und werden
-nicht an den Betreiber übermittelt:</p>
-<ul>
-  <li>die Anmelde-Sitzung, verschlüsselt in der <strong>Keychain</strong>
-    des Geräts,</li>
-  <li>die eingestellte <strong>Serveradresse</strong>, die lokale
-    <strong>Förder-Warteschlange</strong> und Übersichtsmerker in den
-    <strong>UserDefaults</strong> (Geräteeinstellungen) der App.</li>
-</ul>
-<p>Diese Angaben dienen ausschließlich der Funktion der App auf dem
-jeweiligen Gerät.</p>
+<h2 id="zwecke">3. Zwecke und Rechtsgrundlagen</h2>
+<table><tr><th>Zweck</th><th>Rechtsgrundlage</th></tr>
+<tr><td>Spielkonto, Spielstand, gemeinsame Spielfunktionen sowie Gründung und Verwaltung von Allianzen</td><td>Art. 6 Abs. 1 lit. b DSGVO: Vertragserfüllung</td></tr>
+<tr><td>Sicherheit, Missbrauchsabwehr, Fehlersuche und Nachweis einer Kontolöschung</td><td>Art. 6 Abs. 1 lit. f DSGVO: berechtigtes Interesse an einem sicheren und funktionsfähigen Betrieb</td></tr>
+<tr><td>Meldung und Moderation anstößiger oder missbräuchlicher Allianzbezeichnungen und Rufnamen</td><td>Art. 6 Abs. 1 lit. f DSGVO: berechtigtes Interesse am Schutz der Spielenden und am missbrauchsfreien Betrieb</td></tr>
+<tr><td>Datensicherung und Prüfung sicherer Serveraktualisierungen zum Schutz vor Verlust des Spielstands</td><td>Art. 6 Abs. 1 lit. f DSGVO: berechtigtes Interesse an Datenintegrität und Wiederherstellbarkeit</td></tr></table>
+<p>Eine Verarbeitung zu Werbezwecken oder geräte- bzw. websiteübergreifendes Tracking findet nicht statt.</p>
 
-<h2 id="zwecke">3. Zwecke und Rechtsgrundlagen der Verarbeitung</h2>
-<table>
-  <tr><th>Zweck</th><th>Rechtsgrundlage</th></tr>
-  <tr>
-    <td>Bereitstellung eines Spielkontos, Durchführung des Spiels,
-      Speicherung des Spielstands</td>
-    <td>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</td>
-  </tr>
-  <tr>
-    <td>Sicherheit, Missbrauchs- und Betrugsabwehr (Anfragebremse,
-      Anmeldesperre), Fehlersuche im Betrieb, Nachweis einer
-      Kontolöschung</td>
-    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem
-      sicheren und funktionsfähigen Betrieb)</td>
-  </tr>
-  <tr>
-    <td>Tägliche Datensicherung zum Schutz vor Datenverlust</td>
-    <td>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</td>
-  </tr>
-</table>
-<p>Es findet <strong>keine</strong> Verarbeitung zu Werbezwecken, kein
-Tracking und kein Profiling statt (siehe Abschnitt 10).</p>
-
-<h2 id="empfaenger">4. Empfänger und Auftragsverarbeiter</h2>
-
-<h3>4.1 Hosting: Railway Corp.</h3>
-<p>Die Server der App (Datenbank, Anwendung, tägliche Sicherung) laufen bei
-<strong>Railway Corp.</strong>, Region Amsterdam/EU. Railway hat als
-Auftragsverarbeiter Zugriff auf die verarbeiteten Daten, soweit das für den
-Betrieb der Server technisch notwendig ist.</p>
-<div class="to-check">
-  <strong>Vom Betreiber zu prüfen:</strong> Ob mit Railway ein
-  Auftragsverarbeitungsvertrag (AVV) nach Art. 28 DSGVO abgeschlossen ist
-  bzw. abgeschlossen werden muss, und — falls Datenverarbeitung außerhalb der
-  EU/des EWR stattfindet (z. B. durch Sub-Auftragsverarbeiter von Railway) —
-  ob Standardvertragsklauseln (SCC) vorliegen. Diese Prüfung ist vor
-  Veröffentlichung dieser Erklärung abzuschließen.
-</div>
-
+<h2 id="empfaenger">4. Empfänger und Dienstleister</h2>
+<h3>4.1 Railway</h3>
+<p>Anwendung, Datenbank und tägliche Sicherung werden bei Railway Corporation betrieben; die konfigurierten Server befinden sich in Amsterdam/EU. Railway verarbeitet Daten, soweit dies für das Hosting erforderlich ist. Mit Railway besteht ein Auftragsverarbeitungsvertrag. Dieser enthält Regelungen zu Unterauftragsverarbeitern und zu Übermittlungen außerhalb des EWR einschließlich Standardvertragsklauseln. Informationen: <a href="https://railway.com/legal/dpa">Railway Data Processing Addendum</a> und <a href="https://trust.railway.com/">Railway Trust Center</a>. Ein Serverstandort innerhalb der EU bedeutet nicht, dass sämtliche Zugriffsmöglichkeiten des Dienstleisters ausschließlich innerhalb der EU liegen.</p>
 <h3>4.2 Apple</h3>
-<p>Apple (Apple Inc. bzw. Apple Distribution International) ist
-ausschließlich für den <strong>Vertrieb der App</strong> über den App Store
-sowie für <strong>TestFlight</strong> zuständig. Käufe, Rechnungsstellung und
-ggf. Altersfreigaben laufen über Apples eigene Systeme und unterliegen
-Apples eigener Datenschutzerklärung. Der Betreiber erhält von Apple keine
-Zahlungsdaten.</p>
-<p>Weitere Empfänger oder Auftragsverarbeiter gibt es nicht.</p>
+<p>Apple ist für App-Store-Vertrieb und TestFlight zuständig. Dabei verarbeitet Apple Daten nach seiner eigenen <a href="https://www.apple.com/legal/privacy/">Datenschutzerklärung</a>. Der Betreiber erhält keine Zahlungs- oder Kartendaten von Apple. Kostenpflichtige In-App-Käufe sind derzeit nicht freigeschaltet.</p>
+<h3>4.3 GitHub Pages</h3>
+<p>Diese Informationsseite wird über GitHub Pages bereitgestellt. Beim Aufruf protokolliert GitHub unter anderem die IP-Adresse zu Sicherheitszwecken. Es werden auf dieser Seite keine Analyse- oder Werbe-Skripte und keine externen Schriftarten eingebunden. Die Verarbeitung beim Websitehoster beschreibt die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>. Spieldaten werden nicht über diese Website übertragen.</p>
+<h3>4.4 Zugriff des Betreibers und anderer Spielender</h3>
+<p>Der Betreiber hat geschützten administrativen Zugriff auf Spielkonten, Meldungen und Betriebsprotokolle. Andere Spielende sehen ausschließlich die vorgesehenen Spielinformationen und die in Abschnitt 2.5 beschriebenen Allianzdaten, nicht E-Mail-Adresse, Passwort-Hash oder Melderidentität. Private Sicherungs- und Prüfkopien werden nur für den Betrieb und die Sicherung des Spielstands verwendet, nicht veröffentlicht.</p>
 
 <h2 id="dauer">5. Speicherdauer</h2>
-<table>
-  <tr><th>Daten</th><th>Dauer</th></tr>
-  <tr>
-    <td>Kontodaten (E-Mail, Passwort-Hash, Rufname)</td>
-    <td>bis zur Löschung des Kontos durch die spielende Person selbst oder
-      auf Anfrage über den Support (Abschnitt 8)</td>
-  </tr>
-  <tr>
-    <td>Spieldaten nach einer Kontolöschung</td>
-    <td>bleiben in anonymisierter/pseudonymisierter Form bestehen
-      (siehe Abschnitt 7)</td>
-  </tr>
-  <tr>
-    <td>Tägliche Datensicherung (Backup)</td>
-    <td>maximal 14 Tage, danach automatische Löschung</td>
-  </tr>
-  <tr>
-    <td>Server-Protokolle (Logs) beim Hoster</td>
-    <td>7 Tage beim Hoster Railway (Tarif „Hobby“), danach automatische Löschung</td>
-  </tr>
-  <tr>
-    <td>Zähler der Anfragebremse</td>
-    <td>nur im Arbeitsspeicher, längstens bis zum nächsten Neustart des
-      Servers</td>
-  </tr>
-</table>
+<table><tr><th>Daten</th><th>Dauer und Löschverfahren</th></tr>
+<tr><td>Kontodaten</td><td>Bis zur Kontolöschung, vorbehaltlich der nachfolgend beschriebenen historischen Inhalte.</td></tr>
+<tr><td>Gemeinsame Spiel- und Transaktionshistorie</td><td>Bleibt nach Kontolöschung technisch kennungsgebunden erhalten, um Wirtschaft und Berichte anderer Spielender konsistent zu halten; siehe Abschnitt 7.</td></tr>
+<tr><td>Tägliche Sicherungen</td><td>Die laufende Sicherungsroutine entfernt Sicherungen nach ihrer 14-Tage-Aufbewahrung beim nächsten erfolgreichen Sicherungslauf. Bei ausgefallenen Läufen kann die tatsächliche Speicherung länger dauern.</td></tr>
+<tr><td>Zusätzliche private Sicherungs- und Prüfkopien vor Serveraktualisierungen</td><td>Bis sie für sichere Wiederherstellung und die Nachprüfung des Spielstandschutzes nicht mehr erforderlich sind. Für diese gesonderten Kopien besteht derzeit keine automatische feste Löschfrist; Zugriff ist auf den Betreiber beschränkt.</td></tr>
+<tr><td>Server-Protokolle beim Hoster</td><td>Im verwendeten Railway-Hobby-Tarif 7 Tage; gesondert gesicherte Betriebsnachweise sind davon nicht umfasst.</td></tr>
+<tr><td>Anfragezähler im Arbeitsspeicher</td><td>Kurzzeitig, spätestens bis zum nächsten Serverneustart.</td></tr>
+<tr><td>Laufende Mitgliedschaften</td><td>Solange die Mitgliedschaft besteht.</td></tr>
+<tr><td>Allianzverlauf und entschiedene oder abgelaufene Einladungen/Bewerbungen</td><td>180 Tage. Ältere Einträge werden nicht mehr angezeigt; die tatsächliche Löschung erfolgt schrittweise bei späteren passenden Befehlen auf dieselbe Allianz, mit begrenzter Zahl von Zeilen je Vorgang und ohne Zeitgeber. Mehrere Vorgänge können nötig sein; in ruhenden Allianzen können Zeilen länger gespeichert bleiben.</td></tr>
+<tr><td>Beendete Mitgliedschaften</td><td>Aufräumung nur bei einem späteren Befehl auf diese Allianz, an dem die betroffene Person beteiligt ist. Ohne einen solchen Vorgang können Kennung, Beitritts-/Endzeit und Endgrund über 180 Tage hinaus ohne feste automatische Löschfrist bestehen bleiben.</td></tr>
+<tr><td>Name und Kürzel einer aufgelösten Allianz</td><td>30 Tage gegen Neuvergabe gesperrt. Historische Bezeichnungen bleiben in der Allianzzeile erhalten, solange diese gespeichert ist.</td></tr>
+<tr><td>Meldungen zu Allianzen und Rufnamen</td><td>Offene Meldungen bis zur Bearbeitung. Erledigte Meldungen 180 Tage nach Erledigung; anschließend schrittweise Löschung bei späteren erfolgreichen Meldungen oder Erledigungen, mit begrenzter Zahl von Zeilen je Vorgang und ohne Zeitgeber. Mehrere Vorgänge können nötig sein.</td></tr>
+<tr><td>Betreiberprotokoll und gesonderte Betriebsnachweise</td><td>Derzeit keine feste automatische Löschfrist. Sie werden zur Nachvollziehbarkeit von Verwaltungsmaßnahmen und zum sicheren Betrieb aufbewahrt und sind nicht für andere Spielende zugänglich.</td></tr></table>
 
-<h2 id="loeschen-app">6. Konto löschen in der App</h2>
-<p>Das Konto kann jederzeit selbst und ohne Wartezeit <strong>in der
-App</strong> gelöscht werden:</p>
-<p class="steps">Kontoblatt → „Konto löschen“ → Hinweise lesen → Passwort
-eingeben → endgültig bestätigen.</p>
-<p>Nach der Löschung gilt:</p>
-<ul>
-  <li>Die E-Mail-Adresse und der Rufname werden sofort überschrieben; eine
-    Anmeldung mit den alten Zugangsdaten ist danach nicht mehr möglich.</li>
-  <li>Alle Sitzungen auf allen Geräten werden beendet.</li>
-  <li>Offene Marktaufträge werden storniert, Ware und Guthaben verbleiben
-    eingefroren im (nun anonymen) Bestand.</li>
-  <li>Andere Spielerinnen und Spieler sehen an Stelle des bisherigen
-    Rufnamens „<strong>Gelöschter Spieler #XXXX</strong>“.</li>
-  <li>Spieldaten, die mit anderen Spielenden verknüpft sind (z. B. Markt-
-    oder Kampfhistorie), bleiben aus technischen Gründen bestehen, sind aber
-    nach der Löschung keiner Person mehr zuordenbar.</li>
-  <li>Die Löschung ist <strong>endgültig</strong> und kann nicht rückgängig
-    gemacht werden.</li>
-</ul>
-<p>Die Löschung wird in einem Löschprotokoll ohne personenbezogene Daten
-festgehalten (Konto-Kennung, Zeitpunkt, Weg), um die Erledigung nachweisen zu
-können und um eine Löschung nach einer technischen Wiederherstellung aus
-einer Datensicherung erneut anwenden zu können (Abschnitt 5).</p>
+<h2 id="loeschen-app">6. Konto in der App löschen</h2>
+<p class="steps">Kontoblatt → „Konto löschen“ → Hinweise lesen → Passwort eingeben → endgültig bestätigen.</p>
+<p>Die Kontolöschung ist endgültig. E-Mail-Adresse und aktueller Rufname werden überschrieben, Zugang und Sitzungen gesperrt, offene Marktaufträge storniert. Ware und Guthaben bleiben im gesperrten Bestand, damit die Spielwirtschaft konsistent bleibt. Andere Spielende sehen anstelle des aktuellen Rufnamens „Gelöschter Spieler #XXXX“.</p>
+<p>Die Allianzmitgliedschaft endet in derselben Transaktion; offene Einladungen und Bewerbungen werden zurückgezogen. Eine Allianz ohne Leitung bleibt bestehen, bis ein Mitglied die Leitung übernimmt. War das gelöschte Konto das einzige Mitglied, wird die Allianz aufgelöst.</p>
+<p>Ein Löschprotokoll mit technischer Kennung, Zeitpunkt und Löschweg bleibt zum Nachweis sowie zur erneuten Anwendung nach einer Wiederherstellung erhalten. Auch technische Kennungen sind nicht automatisch anonyme Daten.</p>
 
-<h2 id="nach-loeschung">7. Was nach einer Löschung bestehen bleibt</h2>
-<p>Aus technischen Gründen (Wirtschaftssystem der Spielwelt,
-Nullsummenprinzip, Nachvollziehbarkeit für andere Spielende) werden
-Spieldaten nicht vollständig gelöscht, sondern <strong>vom Personenbezug
-getrennt (anonymisiert/pseudonymisiert)</strong>: Die Datensätze bleiben an
-eine technische Kennung gebunden, die nach der Löschung von E-Mail-Adresse,
-Passwort und Rufname niemandem mehr zugeordnet werden kann. Bereits
-abgeschlossene, versiegelte Aufklärungsberichte anderer Spielender können den
-früheren Rufnamen technisch weiterhin enthalten; angezeigt wird dort jedoch
-ebenfalls „Gelöschter Spieler #XXXX“. Eine zusätzliche, endgültige Entfernung
-dieses Rests ist auf Anfrage über den Support möglich (Abschnitt 8).</p>
+<h2 id="nach-loeschung">7. Verbleibende historische Daten</h2>
+<p>Gemeinsame Spiel-, Markt- und Kampfhistorie bleibt an technische Kennungen gebunden. Das Überschreiben aktueller Kontodaten reduziert den unmittelbaren Personenbezug, garantiert aber keine vollständige Anonymität. Historische Aufklärungsberichte, Meldungsschnappschüsse und Moderationsprotokolle können frühere Rufnamen enthalten; Allianzbezeichnungen bleiben bestehen. Meldungen werden nicht allein durch eine Kontolöschung entfernt. Zusammenhang mit Zusatzwissen, noch vorhandenen Protokollen oder Sicherungen kann weiterhin einen Personenbezug ermöglichen.</p>
+<p>Für weitergehende Löschung oder Einschränkung bitte die Kontaktstelle verwenden. Solche Anfragen werden unter Berücksichtigung der gesetzlichen Voraussetzungen und berechtigten Interessen geprüft; eine pauschale vollständige Löschung sämtlicher gemeinsamer Wirtschaftshistorie wird nicht zugesagt.</p>
 
-<h2 id="support">8. Löschung per Support (ohne Zugang zur App)</h2>
-<p>Wer sich nicht mehr anmelden kann (z. B. Passwort vergessen — ein
-automatischer Passwort-Reset ist derzeit nicht vorgesehen), kann die
-Löschung des Kontos per E-Mail an die in Abschnitt 1 genannte Adresse
-verlangen. Aus Sicherheitsgründen wird vor der Löschung geprüft, dass die
-Anfrage tatsächlich von der Inhaberin bzw. dem Inhaber der betroffenen
-E-Mail-Adresse stammt (Antwort ausschließlich an diese Adresse).</p>
+<h2 id="support">8. Support ohne App-Zugang</h2>
+<p>Ist eine Anmeldung nicht mehr möglich, kann eine Löschanfrage per E-Mail an die Kontaktstelle erfolgen. Ein automatischer Passwort-Reset ist derzeit nicht vorgesehen. Vor einer Kontolöschung über den Support wird die Berechtigung geprüft; Antworten erfolgen an die zum Konto gehörende E-Mail-Adresse.</p>
 
-<h2 id="rechte">9. Rechte der betroffenen Person</h2>
-<p>Es besteht das Recht auf:</p>
-<ul>
-  <li><strong>Auskunft</strong> über die verarbeiteten Daten
-    (Art. 15 DSGVO),</li>
-  <li><strong>Berichtigung</strong> unrichtiger Daten (Art. 16 DSGVO),</li>
-  <li><strong>Löschung</strong> („Recht auf Vergessenwerden“,
-    Art. 17 DSGVO) — in der App selbst umsetzbar, siehe Abschnitt 6,</li>
-  <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO),</li>
-  <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO),</li>
-  <li><strong>Widerspruch</strong> gegen eine auf berechtigtem Interesse
-    beruhende Verarbeitung (Art. 21 DSGVO).</li>
-</ul>
-<p>Zur Ausübung dieser Rechte genügt eine formlose E-Mail an die in
-Abschnitt 1 genannte Adresse.</p>
+<h2 id="rechte">9. Rechte</h2>
+<p>Unter den jeweiligen gesetzlichen Voraussetzungen bestehen die Rechte auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen eine Verarbeitung auf Grundlage berechtigter Interessen (Art. 21). Anfragen sind formlos an die Kontaktstelle möglich.</p>
 
-<h2 id="kein-tracking">10. Kein Tracking, keine Werbung, keine Drittanbieter-SDKs</h2>
-<p>Project Lattice verfolgt seine Nutzerinnen und Nutzer <strong>nicht</strong>
-geräte- oder websiteübergreifend, zeigt <strong>keine Werbung</strong> und
-bindet <strong>keine Analyse-, Tracking- oder Werbe-SDKs von
-Drittanbietern</strong> ein. Die einzigen an den Server übermittelten
-personenbezogenen Daten sind E-Mail-Adresse und Rufname zum Zweck der
-Kontoführung (siehe auch das Datenschutzmanifest der App,
-<code>PrivacyInfo.xcprivacy</code>).</p>
+<h2 id="kein-tracking">10. Kein Tracking und keine Werbung</h2>
+<p>Die App nutzt keine Analyse-, Tracking- oder Werbe-SDKs, zeigt keine Werbung und verfolgt Personen nicht geräte- oder websiteübergreifend. Das bedeutet nicht, dass nur E-Mail-Adresse und Rufname verarbeitet werden: Zu den erforderlichen Daten gehören auch technische Kennungen, Spielvorgänge, Allianzinhalte und Meldungen wie oben beschrieben.</p>
 
-<h2 id="beschwerde">11. Beschwerderecht bei einer Aufsichtsbehörde</h2>
-<p>Unabhängig von anderen Rechtsbehelfen besteht das Recht, sich bei einer
-Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem
-Mitgliedstaat des gewöhnlichen Aufenthalts, des Arbeitsplatzes oder des Orts
-des mutmaßlichen Verstoßes. Zuständig für den Verantwortlichen ist
-voraussichtlich:</p>
-<div class="card">
-  <p style="margin:0">Die Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover</p>
-</div>
+<h2 id="beschwerde">11. Beschwerderecht</h2>
+<p>Es besteht das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde, insbesondere am gewöhnlichen Aufenthaltsort, Arbeitsplatz oder Ort des vermuteten Verstoßes. Für den Sitz des Verantwortlichen ist zuständig:</p>
+<div class="card"><p>Die Landesbeauftragte für den Datenschutz Niedersachsen<br>Prinzenstraße 5<br>30159 Hannover</p></div>
 
 <h2 id="kinder">12. Kinder und Jugendliche</h2>
-<p>Project Lattice richtet sich nicht an Kinder unter
-16 Jahren. Personen
-unter diesem Alter sollen die App nur mit Zustimmung der
-Erziehungsberechtigten nutzen. Sollten Hinweise vorliegen, dass ein Konto
-von einer zu jungen Person ohne die erforderliche Zustimmung angelegt wurde,
-wird der Betreiber es auf Mitteilung hin löschen.</p>
+<p>Project Lattice richtet sich nicht an Kinder unter 16 Jahren. Personen unter diesem Alter sollen die App nur mit Zustimmung der Erziehungsberechtigten nutzen. Hinweise auf eine Nutzung durch zu junge Personen ohne erforderliche Zustimmung können an die Kontaktstelle gemeldet werden.</p>
 
-<h2 id="premium">13. Käufe innerhalb der App (Premium) — noch nicht aktiv</h2>
-<div class="to-check">
-  <strong>Dieser Abschnitt ist vorbereitet, aber derzeit noch nicht
-  anwendbar</strong>, weil die App aktuell keine kostenpflichtigen Inhalte
-  anbietet.
-</div>
-<p>Sobald In-App-Käufe („Premium“) eingeführt werden, gilt ergänzend:</p>
-<ul>
-  <li>Käufe erfolgen ausschließlich über <strong>Apples
-    In-App-Kauf-System</strong>. Der Betreiber erhält dabei keine Zahlungs-
-    oder Kartendaten, sondern nur eine Kaufbestätigung (Transaktion) von
-    Apple.</li>
-  <li>Kaufbelege werden — auch nach einer Kontolöschung — aus handels- und
-    steuerrechtlichen Gründen sowie wegen möglicher späterer
-    Rückerstattungsmeldungen aufbewahrt (Art. 17 Abs. 3 lit. b bzw. e
-    DSGVO). Sie werden dabei einem anonymisierten Konto zugeordnet, nicht
-    mehr der Person.</li>
-  <li>Rechtsgrundlage bleibt Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung
-    des Kaufvorgangs).</li>
-</ul>
-<div class="to-check">
-  <strong>Vor der Einführung von Premium zu ergänzen:</strong> genaue
-  Beschreibung der Kaufdaten, Aufbewahrungsfristen der Kaufbelege, Hinweis
-  auf Apples eigene Datenschutzerklärung, ggf. Aktualisierung des
-  Datenschutzmanifests (<code>PrivacyInfo.xcprivacy</code>) um
-  „Kaufhistorie“.
-</div>
+<h2 id="premium">13. Premium und Käufe</h2>
+<p>Kostenpflichtige In-App-Käufe sind derzeit nicht freigeschaltet. Die technische Vorbereitung ist keine Echtgeldfreigabe. Vor Einführung solcher Käufe wird diese Erklärung um tatsächlich verarbeitete Kaufdaten, deren Zuordnung und Aufbewahrung ergänzt.</p>
 
-<h2 id="aenderungen">14. Änderungen dieser Erklärung</h2>
-<p>Diese Datenschutzerklärung kann angepasst werden, etwa wenn sich die App
-oder die zugrunde liegende Datenverarbeitung ändert. Die jeweils aktuelle
-Fassung ist unter der in App Store Connect und in der App hinterlegten
-Adresse abrufbar.</p>
-
-<footer>
-  <p>Stand dieser Erklärung: 29. September 2026</p>
-  
-</footer>
-
+<h2 id="aenderungen">14. Änderungen</h2>
+<p>Diese Erklärung wird angepasst, wenn sich die Datenverarbeitung ändert. Die aktuelle Fassung ist unter der in App und App Store Connect hinterlegten Adresse abrufbar.</p>
+<footer><p>Stand dieser Erklärung: 7. Oktober 2026</p></footer>
 </div>
 </body>
 </html>
